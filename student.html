@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ข้อมูลนักศึกษา - REG MJU</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/th/a/a2/Maejo_University_Logo.svg" alt="ตราสัญลักษณ์ มหาวิทยาลัยแม่โจ้">
+        <span class="brand-title">REG MJU</span>
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="services.html">บริการการศึกษา</a></li>
+          <li><a href="student.html" class="active">ข้อมูลนักศึกษา</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+      <div class="card">
+        <h2 class="card-title"> ข้อมูลนักศึกษา</h2>
+        <div style="line-height: 2;">
+          <p><strong>ชื่อ-นามสกุล:</strong> นักศึกษา ตะวันฉาย พีเคแสนชัย</p>
+          <p><strong>รหัสนักศึกษา:</strong> 6804101301</p>
+          <p><strong>คณะ:</strong> วิทยาศาสตร์</p>
+          <p><strong>สาขาวิชา:</strong> วิทยาการคอมพิวเตอร์</p>
+          <p><strong>สถานะ:</strong> กำลังศึกษา</p>
+        </div>
+      </div>
+
+      <div class="card" style="text-align: center;">
+        <h2 class="card-title" style="justify-content: center;"> สรุปผลการเรียน</h2>
+        <p style="color: var(--text-muted); margin-top: 1rem;">เกรดเฉลี่ยสะสม (GPAX)</p>
+        <div style="font-size: 3.5rem; font-weight: bold; color: var(--primary-color);">3.50</div>
+        <span class="badge-open" style="font-size: 0.9rem;">เกียรตินิยม</span>
+        <p style="color: var(--text-muted); margin-top: 1rem;">หน่วยกิตสะสม: 45 หน่วยกิต</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 กลุ่มภารกิจทะเบียนเรียน ประมวลผล และรับเข้า มหาวิทยาลัยแม่โจ้</p>
+  </footer>
+
+</body>
+</html>

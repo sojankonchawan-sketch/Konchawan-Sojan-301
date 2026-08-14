@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ระบบบริการการศึกษา มหาวิทยาลัยแม่โจ้ (REG MJU)</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Link ไปยังไฟล์ CSS ในโฟลเดอร์ css -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/th/a/a2/Maejo_University_Logo.svg" alt="ตราสัญลักษณ์ มหาวิทยาลัยแม่โจ้">
+        <span class="brand-title">REG MJU</span>
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">หน้าแรก</a></li>
+          <li><a href="services.html">บริการการศึกษา</a></li>
+          <li><a href="student.html">ข้อมูลนักศึกษา</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-container">
+    <div class="dashboard-grid">
+      
+      <!-- Left Sidebar -->
+      <aside>
+        <div class="card">
+          <h3 class="card-title"> เมนูหลัก</h3>
+          <ul class="side-menu">
+            <li><a href="#" class="active"> ค้นหารายวิชา</a></li>
+            <li><a href="#"> ลงทะเบียนเรียน</a></li>
+            <li><a href="#"> ผลการลงทะเบียน/ชำระเงิน</a></li>
+            <li><a href="#"> ตรวจสอบโครงสร้างหลักสูตร</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Search Section -->
+      <section>
+        <div class="card">
+          <h2 class="card-title"> ค้นหากลุ่มวิชาที่เปิดสอน</h2>
+          <form>
+            <div class="form-group">
+              <label for="academic-year">ปีการศึกษา / ภาคเรียน</label>
+              <select id="academic-year" class="form-control">
+                <option>2569 / ภาคเรียนที่ 1</option>
+                <option>2568 / ภาคเรียนที่ 2</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="faculty">หน่วยงานเจ้าของรายวิชา</label>
+              <select id="faculty" class="form-control">
+                <option>ทั้งหมด</option>
+                <option>คณะวิทยาศาสตร์</option>
+                <option>คณะวิศวกรรมและอุตสาหกรรมเกษตร</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="keyword">รหัสวิชา / ชื่อวิชา</label>
+              <input type="text" id="keyword" class="form-control" placeholder="เช่น คศ101 หรือ Com Pro">
+            </div>
+
+            <button type="button" class="btn">ค้นหารายวิชา</button>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title"> ผลการค้นหา</h3>
+          <div class="table-container">
+            <table class="custom-table">
+              <thead>
+                <tr>
+                  <th>รหัสวิชา</th>
+                  <th>ชื่อรายวิชา</th>
+                  <th>หน่วยกิต</th>
+                  <th>สถานะ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>คศ 101</strong></td>
+                  <td>การโปรแกรมคอมพิวเตอร์เบื้องต้น</td>
+                  <td>3(2-2-5)</td>
+                  <td><span class="badge-open">เปิดรับ (25/50)</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right Quick Actions -->
+      <aside>
+        <div class="card">
+          <h3 class="card-title"> Quick Actions</h3>
+          <button class="btn btn-secondary"> ปฏิทินการศึกษา</button>
+          <button class="btn btn-secondary"> คำร้องออนไลน์</button>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 กลุ่มภารกิจทะเบียนเรียน ประมวลผล และรับเข้า มหาวิทยาลัยแม่โจ้</p>
+  </footer>
+
+</body>
+</html>
